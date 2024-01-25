@@ -296,10 +296,9 @@ main .form .form-row input[type=submit] {
   border-radius: 5px;
   color: white;
   margin: 20px;
-  font-family: "Roboto";
-  font-weight: 300;
   letter-spacing: 0.5px;
   border: none;
+  align-self: center;
 }
 main .form .form-row input[type=submit]:hover {
   background: #5d5d8d;
@@ -310,7 +309,6 @@ main .info-contacto, main .form {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 50%;
   color: #403314;
 }
 main .info-contacto .info-span, main .form .info-span {
@@ -352,6 +350,9 @@ main .info-contacto .redes p i:hover, main .form .redes p i:hover {
   .subtitulo {
     font-size: x-large !important;
   }
+  .form {
+    width: 90%;
+  }
 }
 @media (max-width: 450px) {
   main .cont {
@@ -364,6 +365,9 @@ main .info-contacto .redes p i:hover, main .form .redes p i:hover {
   }
   iframe {
     width: auto;
+  }
+  .form-row {
+    flex-direction: column;
   }
 }
 
