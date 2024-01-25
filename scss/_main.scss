@@ -1,0 +1,224 @@
+main{
+    min-height: 85%;
+    height: auto;
+    text-align: center;
+    overflow: auto;
+    @include flex-colum-center;
+    align-items: flex-start;
+
+    .subtitulo {
+        color: $color-enfasis;
+        text-align: left;
+        margin-left: 10%;
+        border-bottom: 1px solid  $color-enfasis;
+        font-size: xx-large;
+        animation-name: sub;
+        animation-duration: 1s;
+        
+    }
+
+    .fondo{
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fondo-txt {
+        background: rgb(54 88 92 / 53%);
+        width: 668px;
+        height: 209px;
+        display: flex;
+        box-shadow: 0 15px 10px 0px rgb(0 0 0 / 27%);
+        animation-name: fondo;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+    }
+
+    @keyframes fondo{
+        from{width: 0px; background: rgb(54 88 92 / 11%); border-radius: 50px 50px;}
+        to{width: 668px; background:rgb(54 88 92 / 53%);}
+    }
+
+    .cont{
+        width: 90%;
+        height: 90%;
+        @include flex-colum-center;
+        
+        
+        &.txt {
+            letter-spacing: 5px;  
+            z-index: 1;
+        }
+
+        .img-cont {
+            flex-direction: row;
+        }
+    }
+
+    /* club */
+
+    .h4-club {
+        font-size: 1.3rem;
+        padding-top: 20px;
+        margin: 0 auto;
+        color: $color-principal;
+        border: none;
+    }
+
+    .unirse, .miembros {
+        @include flex-colum-center;
+        width: 100%;
+        color: $color-texto;
+        margin: 20px auto 0;
+
+        h4{
+            color: $color-principal;
+        }
+
+        p{
+            color: $color-texto;
+        }
+        .container {
+            max-width: 1555px;
+        }
+
+        .unirse-cont, .miembros-cont{
+            border-top: 1px solid $color-fondo;
+            border-bottom: 1px solid $color-fondo;
+        }
+
+        .unirse-txt, .miembros-txt{
+            @include flex-colum-center;
+            align-items: flex-start;
+            text-align: justify;
+            height: 100%;
+            padding: 15px 0;
+        }
+
+        img{
+            height: 200px;
+            width: 170px;
+            padding: 2px!important;
+        }
+
+        a{
+            color: inherit!important;
+        }
+    }
+
+    /* contacto */
+
+    form {
+        width: 100%;
+        height: 100%;
+        display: contents;
+    }
+
+    .form{
+        background-color: #e1d8ce96;
+        border-radius: 20px;
+        margin-bottom: 25px;
+
+        .form-txt{
+            width: 80%;
+            margin: 20px 0 10px;
+        }
+
+        .form-row {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 0;
+    
+            span {
+                @include flex-colum-center;
+                align-items: unset;
+                text-align: unset;
+                padding: 10px 0px;
+                width: 100%;
+                gap: 2px;   
+    
+                textarea {
+                    height: 100px;
+                }
+            }
+
+            input, textarea {
+                border: 1px solid #e1d8ce;
+                background: #f3f1ef;
+            }
+
+            input:hover, textarea:hover{
+                border: 1px solid $color-principal;
+            }
+
+            input:focus-visible, textarea:focus-visible{
+                outline:none;
+                border: 1px solid $color-principal!important;
+            }
+
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+            }
+    
+            input[type="submit"] {
+                width: 100px;
+                background: #a9a097;
+                border-radius: 5px;
+                color: white;
+                margin: 20px;
+                font-family: 'Roboto';
+                font-weight: 300;
+                letter-spacing: 0.5px; 
+                border: none;
+            } 
+            
+            input[type="submit"]:hover{
+                background: $color-enfasis;
+            }
+           
+        }
+    }
+
+    .info-contacto, .form {
+        @include flex-colum-center;
+        width: 50%;  
+        color: $color-texto;
+
+        .info-span {
+            flex-direction: row;
+            gap: 17px;
+        } 
+
+        div {
+            padding: 10px;
+
+            p{
+                margin: 0;
+            }
+        }
+
+        .redes p {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            font-size: xx-large;
+            color: black;
+
+            i{
+                color: $color-texto;
+            }
+
+            i:hover{
+                color: $color-enfasis;
+            }
+        }
+  
+    } 
+}

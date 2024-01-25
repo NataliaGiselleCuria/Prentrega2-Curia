@@ -1,0 +1,38 @@
+header{
+    width: 100%;
+    height: 8%;
+    background-color: white;
+}
+
+.logo {
+    width: 39%;
+    height: 100%;
+    text-align: center;
+
+    p {
+        height: 100%;
+        font-size: x-large;
+        color: $color-principal;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.navbar{
+    width: 95%;
+
+    .navbar-toggler:focus{
+        box-shadow: none!important;
+    }
+}
+
+.navbar-collapse{
+    background-color: white;
+    z-index: 1;
+}
+
+li{
+    display: inline-block;
+    padding: 0 10px
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coder-Ceramicas</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="css/Style.css">
     <script src="https://kit.fontawesome.com/270cc5acdb.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;1,8..144,100;1,8..144,200;1,8..144,300&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;1,8..144,100;1,8..144,200;1,8..144,300&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
     <header>        
         <nav class="navbar navbar-expand-lg bg-body-tertiary w-90 m-auto h-100">  
-            <div class="container-fluid">
+            <div class="container-fluid h-100">
                 <div class="logo">
                     <p>Coder-Ceramicas</p>
                 </div>
@@ -44,17 +44,19 @@
     </header>
     <main>
         <h2 class="subtitulo">EL CLUB</h2>
+        <h4 class="h4-club">Un espacio dedicado al desarrollo de la creatividad y la expresión a través del arte cerámico. <br> Un lugar para compartir saberes, ideas,  música y placer por hacer cerámica.</h4>
         <div class="cont">
+            
             <section class="unirse">
                 <div class="container text-center m-auto">
-                    <div class="row row-cols-1 row-cols-sm-1 row-cols-xl-2">
-                        <div class="col m-auto"><span class="video"><iframe src="https://www.youtube.com/embed/9fcZ16df850"></iframe></span></div>
-                        <div class="col m-auto">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-xl-2 d-flex justify-content-evenly">
+                        <div class="col m-0 w-auto d-flex align-items-center p-0"><span class="video"><iframe src="https://www.youtube.com/embed/9fcZ16df850"></iframe></span></div>
+                        <div class="col m-0 unirse-cont">
                             <span class="unirse-txt">
                                 <h4>Unite al Club</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusamus quaerat nobis deleniti quos magni rem est et porro delectus,
-                                    enim recusandae perspiciatis molestias at modi cupiditate optio cumque voluptate.
+                                <p>- <i>Las clases</i> están dirigidas tanto a principiantes como a personas que ya tienen experiencia previa. Los grupos son reducidos para favorecer el desarrollo individual y el intercambio colectivo.<br> 
+                                - <i>Enseñanza</i> de alfarería en torno y manual. Modelado. Construcción de objetos. Experimentación con diferentes técnicas y tratamientos de superficie. Pátinas, engobes y esmaltes.<br>
+                                - <i>Nuestra propuesta</i> que cada persona haga lo que desea, a su tiempo, con su estilo. Nosotras acompañamos cada proceso creativo de manera personal e individual, guiando, ayudando, brindando herramientas para que puedas crear y aprender. Trabajamos de acuerdo a tus intereses personales, expectativas y proyectos.
                                 </p>
                                 <button class="boton">UNIRSE</button>
                             </span>
@@ -64,22 +66,23 @@
             </section>
             <section class="miembros">
                 <div class="container m-auto">
-                    <div class="row row-cols-1 row-cols-sm-1 row-cols-xl-2">
-                        <div class="col">
-                            <span class="miembros-txt">
-                                <h4>Nuestros miembros</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusamus quaerat nobis deleniti quos magni rem est et porro delectus,
-                                    enim recusandae perspiciatis molestias at modi cupiditate optio cumque voluptate.
-                                </p>
-                        </span></div>
-                        <div class="col m-auto">
-                            <div class="row row-cols-1 row-cols-sm-1 row-cols-xl-3">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-xl-2 justify-content-evenly">
+                        <div class="col w-auto p-0">
+                            <div class="row row-cols-1 row-cols-sm-1 row-cols-xl-3 d-flex justify-content-center m-0">
                                 <img class="img-m" src="img/miembros1.jpg">
                                 <img class="img-m" src="img/miembros2.jpg">
                                 <img class="img-m" src="img/miembros3.jpg">
                             </div> 
                         </div>
+                        <div class="col miembros-cont">
+                            <span class="miembros-txt">
+                                <h4>Nuestros miembros</h4>
+                                <p>
+                                    Siendo parte de nuestro <i>club</i> vas a tener la posibilidad de crear lo que imagines y llevarte tus productos terminados! Además, tendrás descuentos en el uso de nuestros hornos, y en nuestra tienda de insumos para que puedas seguir creando en casa.<br>
+                                    <br><b>Podés solicitar tu vacante y venir a ver nuestro taller <i><a href="contacto.html">comunicandote con nosotros.</a></i></b>
+                                </p>
+                        </span></div>
+                        
                     </div>
                 </div> 
             </section>
@@ -91,12 +94,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
 </body>
 </html>
-<span class="video"><iframe src="https://www.youtube.com/embed/9fcZ16df850"></iframe></span>
-            <span class="unirse-txt">
-                <h4>Unite al Club</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusamus quaerat nobis deleniti quos magni rem est et porro delectus,
-                    enim recusandae perspiciatis molestias at modi cupiditate optio cumque voluptate.
-                </p>
-                <button>UNIRSE</button>
-            </span>
