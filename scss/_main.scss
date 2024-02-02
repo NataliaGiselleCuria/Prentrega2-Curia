@@ -55,8 +55,87 @@ main{
 
         .img-cont {
             flex-direction: row;
+            gap: 13px;
         }
     }
+
+    .tarjeta-comprar {
+        position: absolute;
+        margin-top: 2px;
+        margin-left: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        width: fit-content;
+        height: 30px;
+        background: #d8cec3;
+        color: white;
+        font-size: small;
+        cursor: pointer;
+
+        p{
+            margin: 0;
+            display: none;
+            transition: 1s;
+        }
+
+        .fa-solid.fa-cart-shopping:hover ~ p{
+            display: flex;
+        }
+    }
+
+    .tarjeta-ver {
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: auto;
+        height: 55px;
+        margin-top: 255px;
+        margin-left: 2px;
+        padding: 5px;
+        background: #a9a198;
+        color: white;
+
+        p{
+            margin: 0;
+        } 
+
+        i{
+            align-self: end;
+            padding-bottom: 3px;
+        }
+
+        span {
+            width: 0;
+            transition: 1s ;
+            height: 100%;
+            overflow: hidden;
+
+            p{
+               
+                visibility: hidden;
+                opacity: 0;
+                transition: 0.5s;
+                transition-delay: 0.4s;
+            }
+        }
+
+        i:hover  ~ span{
+            width: 270px;
+
+            p{
+                font-family: 'Montserrat', sans-serif;
+                opacity: 1;
+                visibility: visible;
+                
+            }
+        }
+    }
+
+    
 
     /* club */
 

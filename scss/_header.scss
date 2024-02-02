@@ -8,6 +8,15 @@ header{
     width: 39%;
     height: 100%;
     text-align: center;
+    display: flex;
+    gap: 2px;
+
+    img{
+        height: 60%;
+        width: auto;
+        align-self: center;
+        padding: 2px;
+    }
 
     p {
         height: 100%;
