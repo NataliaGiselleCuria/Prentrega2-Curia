@@ -270,6 +270,7 @@ main .cont {
   margin: auto;
 }
 main .cont.txt {
+  height: fit-content;
   letter-spacing: 5px;
   z-index: 1;
 }
