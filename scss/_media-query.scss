@@ -1,13 +1,39 @@
 @media (max-width: 1700px){
+
+    .whatsapp {
+        bottom: 35px;
+        right: 15px;
+        
+    }
+
     .cont{
         width: 90%;
     }
 }
 
+@media (max-width: 1000px){
+    footer{
+        div{
+            .footer-info{
+
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    }   
+}
+
 @media (max-width: 550px){
+
+    .whatsapp {
+        height: 45px;
+        width: 45px;
+    }
+
     .logo{
         width: auto;
     }
+    
     .logo p {
         font-size: larger;    
     }
@@ -19,6 +45,8 @@
     .form{
         width: 90%;
     }
+
+   
 }
 
 @media (max-width: 450px){
@@ -26,20 +54,20 @@
         .cont{
             width: 85%;
         }
-    }
 
-    .h4-club{
-        padding-top:0;
-        padding: 30px;
-        font-size: 1.2rem;
-    }
+        .h4-club{
+            width: 95%;
+            padding-top:0;
+            padding: 30px;
+            font-size: 1.2rem;
+        }
+
+        iframe{
+            width: auto;
+        }
     
-    iframe{
-        width: auto;
+        .form-row{
+            flex-direction: column;
+        }
     }
-
-    .form-row{
-        flex-direction: column;
-    }
-
 }

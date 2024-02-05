@@ -1,6 +1,10 @@
+.main-index{
+    height: 83%;
+}
+
 main{
-    min-height: 85%;
-    height: auto;
+    margin-top: 75px!important;
+    min-height: 95%;
     text-align: center;
     overflow: auto;
     @include flex-colum-center;
@@ -27,7 +31,7 @@ main{
     }
 
     .fondo-txt {
-        background: rgb(54 88 92 / 53%);
+        background: rgb(192 170 152 / 81%);
         width: 668px;
         height: 209px;
         display: flex;
@@ -38,8 +42,8 @@ main{
     }
 
     @keyframes fondo{
-        from{width: 0px; background: rgb(54 88 92 / 11%); border-radius: 50px 50px;}
-        to{width: 668px; background:rgb(54 88 92 / 53%);}
+        from{width: 0px; background: rgb(192 170 152 / 11%); border-radius: 50px 50px;}
+        to{width: 668px; background:rgb(192 170 152 / 81%);}
     }
 
     .cont{
@@ -135,11 +139,10 @@ main{
         }
     }
 
-    
-
     /* club */
 
     .h4-club {
+        width: 80%;
         font-size: 1.3rem;
         padding-top: 20px;
         margin: 0 auto;
@@ -199,7 +202,6 @@ main{
     .form{
         background-color: #e1d8ce96;
         border-radius: 20px;
-        margin-bottom: 25px;
 
         .form-txt{
             width: 80%;
@@ -266,7 +268,6 @@ main{
 
     .info-contacto, .form {
         @include flex-colum-center;
-        // width: 50%;  
         color: $color-texto;
 
         .info-span {

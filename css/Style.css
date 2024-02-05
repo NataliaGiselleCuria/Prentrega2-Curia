@@ -1,8 +1,41 @@
 body {
   margin: 0;
-  height: 100vh;
+  height: 90vh;
   font-family: "Roboto Serif", sans-serif;
   overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-button {
+  background: #d8cec3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d8cec3;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  bottom: 90px;
+  right: 50px;
+  background-color: #3bab21;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  z-index: 2;
+}
+.whatsapp i.fa.fa-whatsapp.whatsapp-icon {
+  color: white;
 }
 
 .home {
@@ -75,16 +108,58 @@ button {
 }
 
 footer {
-  height: 7%;
   width: 100%;
   background-color: #d8cec3;
+  margin-top: 20px;
+  display: flex;
 }
-footer p {
+footer div {
+  height: 90%;
+  width: 80%;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer div span {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+footer div span img {
+  height: 25px;
+  width: auto;
+  object-fit: contain;
+  padding: 0;
+}
+footer div span p {
   margin: 0;
   padding: 0;
+  font-size: larger;
+  font-weight: 500;
+  color: rgb(185, 169, 151);
+  letter-spacing: 0.3px;
+}
+footer div .footer-info {
+  flex-direction: row;
+  gap: 5px;
+}
+footer div .footer-info p {
+  font-size: medium;
+  font-weight: 400;
+}
+footer div .footer-info a {
+  color: rgb(185, 169, 151);
 }
 
 header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
   width: 100%;
   height: 8%;
   background-color: white;
@@ -121,7 +196,7 @@ header {
 
 .navbar-collapse {
   background-color: white;
-  z-index: 1;
+  z-index: 2;
 }
 
 li {
@@ -129,9 +204,13 @@ li {
   padding: 0 10px;
 }
 
+.main-index {
+  height: 83%;
+}
+
 main {
-  min-height: 85%;
-  height: auto;
+  margin-top: 75px !important;
+  min-height: 95%;
   text-align: center;
   overflow: auto;
   display: flex;
@@ -161,7 +240,7 @@ main .fondo {
   justify-content: center;
 }
 main .fondo-txt {
-  background: rgba(54, 88, 92, 0.53);
+  background: rgba(192, 170, 152, 0.81);
   width: 668px;
   height: 209px;
   display: flex;
@@ -173,12 +252,12 @@ main .fondo-txt {
 @keyframes fondo {
   from {
     width: 0px;
-    background: rgba(54, 88, 92, 0.11);
+    background: rgba(192, 170, 152, 0.11);
     border-radius: 50px 50px;
   }
   to {
     width: 668px;
-    background: rgba(54, 88, 92, 0.53);
+    background: rgba(192, 170, 152, 0.81);
   }
 }
 main .cont {
@@ -263,6 +342,7 @@ main .tarjeta-ver i:hover ~ span p {
   visibility: visible;
 }
 main .h4-club {
+  width: 80%;
   font-size: 1.3rem;
   padding-top: 20px;
   margin: 0 auto;
@@ -319,7 +399,6 @@ main form {
 main .form {
   background-color: rgba(225, 216, 206, 0.5882352941);
   border-radius: 20px;
-  margin-bottom: 25px;
 }
 main .form .form-txt {
   width: 80%;
@@ -409,11 +488,25 @@ main .info-contacto .redes p i:hover, main .form .redes p i:hover {
 }
 
 @media (max-width: 1700px) {
+  .whatsapp {
+    bottom: 35px;
+    right: 15px;
+  }
   .cont {
     width: 90%;
   }
 }
+@media (max-width: 1000px) {
+  footer div .footer-info {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 @media (max-width: 550px) {
+  .whatsapp {
+    height: 45px;
+    width: 45px;
+  }
   .logo {
     width: auto;
   }
@@ -431,15 +524,16 @@ main .info-contacto .redes p i:hover, main .form .redes p i:hover {
   main .cont {
     width: 85%;
   }
-  .h4-club {
+  main .h4-club {
+    width: 95%;
     padding-top: 0;
     padding: 30px;
     font-size: 1.2rem;
   }
-  iframe {
+  main iframe {
     width: auto;
   }
-  .form-row {
+  main .form-row {
     flex-direction: column;
   }
 }
